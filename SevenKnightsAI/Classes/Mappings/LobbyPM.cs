@@ -9,17 +9,17 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping StatusBoard = new PixelMapping //evan hair
         {
-            X = 54,
-            Y = 246,
+            X = 74,
+            Y = 217,
             Color = 0,
             Type = MappingType.BUTTON
         };
 
         public static readonly PixelMapping MasteryButton = new PixelMapping
         {
-            X = 291,
-            Y = 81,
-            Color = 11438155,
+            X = 324,
+            Y = 104,
+            Color = 0,
             Type = MappingType.BUTTON
         };
 
@@ -49,9 +49,9 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping AdventureButton = new PixelMapping
         {
-            X = 883,
-            Y = 496,
-            Color = 5056515,
+            X = 947,
+            Y = 553,
+            Color = 0,
             Type = MappingType.BUTTON
         };
 
@@ -77,16 +77,16 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping GuildButton = new PixelMapping
         {
-            X = 293,
-            Y = 485,
-            Color = 15987160,
+            X = 318,
+            Y = 540,
+            Color = 14277571,
             Type = MappingType.BUTTON
         };
 
         public static readonly PixelMapping HeroButton = new PixelMapping
         {
-            X = 38,
-            Y = 491,
+            X = 51,
+            Y = 531,
             Color = 0,
             Type = MappingType.BUTTON
         };
@@ -97,16 +97,16 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping InboxAvailable = new PixelMapping
         {
-            X = 808,
-            Y = 8,
-            Color = 13051905,
+            X = 893,
+            Y = 29,
+            Color = 12920833,
             Type = MappingType.ANCHOR
         };
 
         public static readonly PixelMapping InboxButton = new PixelMapping
         {
-            X = 827,
-            Y = 28,
+            X = 910,
+            Y = 47,
             Color = 0,
             Type = MappingType.BUTTON
         };
@@ -115,83 +115,19 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly int KEY_OFFSET_Y = 0;
 
-        public static readonly PixelMapping LuckyBoxAvailable_1 = new PixelMapping
+        public static readonly PixelMapping MenuButtonYellowLeft = new PixelMapping //Chest
         {
-            X = 903,
-            Y = 269,
-            Color = 15592677,
+            X = 821,
+            Y = 39,
+            Color = 11631152,
             Type = MappingType.ANCHOR
         };
 
-        public static readonly PixelMapping LuckyBoxAvailable_2 = new PixelMapping
+        public static readonly PixelMapping MenuButtonYellowRight = new PixelMapping //Chest
         {
-            X = 910,
-            Y = 260,
-            Color = 16448248,
-            Type = MappingType.ANCHOR
-        };
-
-        public static readonly PixelMapping LuckyBoxButton = new PixelMapping
-        {
-            X = 907,
-            Y = 245,
-            Color = 0,
-            Type = MappingType.BUTTON
-        };
-
-        public static readonly PixelMapping LuckyBoxLastOne_1 = new PixelMapping
-        {
-            X = 891,
-            Y = 262,
-            Color = 16711422,
-            Type = MappingType.ANCHOR
-        };
-
-        public static readonly PixelMapping LuckyBoxLastOne_2 = new PixelMapping
-        {
-            X = 891,
-            Y = 270,
-            Color = 15658476,
-            Type = MappingType.ANCHOR
-        };
-
-        public static readonly PixelMapping MaysLuckyChestAvailable_1 = new PixelMapping
-        {
-            X = 903,
-            Y = 183,
-            Color = 16316143,
-            Type = MappingType.ANCHOR
-        };
-
-        public static readonly PixelMapping MaysLuckyChestAvailable_2 = new PixelMapping
-        {
-            X = 910,
-            Y = 174,
-            Color = 16579578,
-            Type = MappingType.ANCHOR
-        };
-
-        public static readonly PixelMapping MaysLuckyChestButton = new PixelMapping
-        {
-            X = 909,
-            Y = 156,
-            Color = 0,
-            Type = MappingType.BUTTON
-        };
-
-        public static readonly PixelMapping MenuButtonYellowLeft = new PixelMapping
-        {
-            X = 747,
-            Y = 37,
-            Color = 11236654,
-            Type = MappingType.ANCHOR
-        };
-
-        public static readonly PixelMapping MenuButtonYellowRight = new PixelMapping
-        {
-            X = 790,
-            Y = 32,
-            Color = 12223286,
+            X = 865,
+            Y = 64,
+            Color = 8803614,
             Type = MappingType.ANCHOR
         };
 
@@ -205,8 +141,8 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping QuestButton = new PixelMapping
         {
-            X = 120,
-            Y = 500,
+            X = 140,
+            Y = 543,
             Color = 0,
             Type = MappingType.BUTTON
         };
@@ -226,8 +162,8 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping ShopButton = new PixelMapping
         {
-            X = 709,
-            Y = 461,
+            X = 785,
+            Y = 537,
             Color = 0,
             Type = MappingType.BUTTON
         };
@@ -242,8 +178,8 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping SocialButton = new PixelMapping
         {
-            X = 209,
-            Y = 492,
+            X = 233,
+            Y = 533,
             Color = 0,
             Type = MappingType.BUTTON
         };

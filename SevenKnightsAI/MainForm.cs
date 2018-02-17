@@ -394,8 +394,12 @@ namespace SevenKnightsAI
                     return;
                 }
             }
-            this.StopAI();
-            return;
+            else
+            {
+                this.AppendLog("Kok Berhenti?");
+                this.StopAI();
+                return;
+            }
         }
 
         private void aiPause_Click(object sender, EventArgs e)
@@ -1719,7 +1723,8 @@ namespace SevenKnightsAI
 
         private void saveSettingsButton_Click(object sender, EventArgs e)
         {
-            try
+            CaptureReport();
+            /*try
             {
                 this.AIProfiles.Save();
                 MessageBox.Show("Settings has been saved!", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -1727,7 +1732,7 @@ namespace SevenKnightsAI
             catch (Exception ex)
             {
                 MessageBox.Show("Cannot save settings: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-            }
+            }*/
         }
 
         private void SetAutoSkill(int tag, int option)
@@ -2114,7 +2119,7 @@ namespace SevenKnightsAI
 
         private void ST_ToggleBlueStacks(bool force = false, bool show = true)
         {
-            if (this.AI.BlueStacks == null || this.AI.BlueStacks.MainWindowAS == null || this.AI.BlueStacks.SideMenuAS == null)
+            if (this.AI.BlueStacks == null || this.AI.BlueStacks.MainWindowAS == null)//|| this.AI.BlueStacks.SideMenuAS == null
             {
                 return;
             }
@@ -2670,11 +2675,11 @@ namespace SevenKnightsAI
         }
         public void CaptureReport()
         {
-            if (tabControl1.SelectedTab != tabControl1.TabPages["tabPage4"])
+            /*if (tabControl1.SelectedTab != tabControl1.TabPages["tabPage4"])
             {
                 this.tabControl1.SelectedTab = tabPage4;
             }
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(5000);*/
             ScreenCapture sc = new ScreenCapture();
             // capture entire screen, and save it to a file
             Image img = sc.CaptureScreen();

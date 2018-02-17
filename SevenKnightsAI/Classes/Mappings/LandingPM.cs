@@ -22,9 +22,9 @@ namespace SevenKnightsAI.Classes.Mappings
 
         public static readonly PixelMapping Shield = new PixelMapping
         {
-            X = 17,
-            Y = 464,
-            Color = 6311492,
+            X = 956,
+            Y = 586,
+            Color = 593184,
             Type = MappingType.ANCHOR
         };
 

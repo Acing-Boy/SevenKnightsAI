@@ -13,21 +13,21 @@ namespace SevenKnightsAI.Classes
 
         private static readonly string ACTIVITY_NAME = BlueStacks.PACKAGE_NAME + "/com.netmarble.sknightsgb.MainActivity";
 
-        public static readonly int ACTUAL_HEIGHT = 570;
+        public static readonly int ACTUAL_HEIGHT = 900;
 
-        public static readonly int ACTUAL_WIDTH = 962;
+        public static readonly int ACTUAL_WIDTH = 1600;
 
-        public static readonly int BS_HEIGHT = 540;
+        public static readonly int BS_HEIGHT = 900;
 
-        public static readonly int BS_WIDTH = 960;
+        public static readonly int BS_WIDTH = 1600;
 
-        private static readonly string CONTROL_HANDLE_TITLE = "BlueStacks Android Plugin";
+        private static readonly string CONTROL_HANDLE_TITLE = "BlueStacks Android PluginAndroid";
 
         public static readonly int GUEST_HEIGHT = 900;
 
         public static readonly int GUEST_WIDTH = 1600;
 
-        private static readonly string HANDLE_TITLE = "Bluestacks App Player";
+        private static readonly string HANDLE_TITLE = "BlueStacks";
 
         public static readonly int OFFSET_X = 1;
 
@@ -120,7 +120,7 @@ namespace SevenKnightsAI.Classes
         {
             this.HideMainWindow(useOpacity);
             Thread.Sleep(50);
-            this.HideSideMenu(useOpacity);
+            //this.HideSideMenu(useOpacity);
             this.IsHidden = true;
         }
 
@@ -134,7 +134,7 @@ namespace SevenKnightsAI.Classes
             this.MainWindowAS.Hide();
         }
 
-        public void HideSideMenu(bool useOpacity = true)
+        /*public void HideSideMenu(bool useOpacity = true)
         {
             if (useOpacity)
             {
@@ -142,7 +142,7 @@ namespace SevenKnightsAI.Classes
                 return;
             }
             this.SideMenuAS.Hide();
-        }
+        }*/
 
         public bool Hook()
         {
@@ -150,7 +150,7 @@ namespace SevenKnightsAI.Classes
             try
             {
                 this.MainWindowAS = new AutoSpy(AutoSpy.GetHandle(BlueStacks.HANDLE_TITLE, null), AutoSpy.GetControlHandle(BlueStacks.HANDLE_TITLE, BlueStacks.CONTROL_HANDLE_TITLE));
-                this.SideMenuAS = new AutoSpy(AutoSpy.GetHandle("", BlueStacks.SIDE_MENU_HANDLE_TITLE));
+                //this.SideMenuAS = new AutoSpy(AutoSpy.GetHandle("", BlueStacks.SIDE_MENU_HANDLE_TITLE));
                 this.Show(true);
                 result = true;
             }
@@ -205,7 +205,7 @@ namespace SevenKnightsAI.Classes
         public void Opacity(int value)
         {
             this.MainWindowOpacity(value);
-            this.SideMenuAS.Opacity(value);
+            //this.SideMenuAS.Opacity(value);
         }
 
         public void RenderConfig()
@@ -265,7 +265,7 @@ namespace SevenKnightsAI.Classes
         {
             this.ShowMainWindow(useOpacity);
             Thread.Sleep(50);
-            this.ShowSideMenu(useOpacity);
+            //this.ShowSideMenu(useOpacity);
             this.IsHidden = false;
         }
 
@@ -279,7 +279,7 @@ namespace SevenKnightsAI.Classes
             this.MainWindowAS.Show();
         }
 
-        public void ShowSideMenu(bool useOpacity = true)
+        /*public void ShowSideMenu(bool useOpacity = true)
         {
             if (useOpacity)
             {
@@ -292,7 +292,7 @@ namespace SevenKnightsAI.Classes
         public void SideMenuOpacity(int value)
         {
             this.SideMenuAS.Opacity(value);
-        }
+        }*/
 
         public void TerminateGame()
         {
@@ -311,7 +311,7 @@ namespace SevenKnightsAI.Classes
         {
             get
             {
-                return this.ConfigRegistryKey.GetValue("bstadbport").ToString();
+                return this.ConfigRegistryKey.GetValue("BstAdbPort").ToString();
             }
         }
 
@@ -371,12 +371,12 @@ namespace SevenKnightsAI.Classes
             }
         }
 
-        public AutoSpy SideMenuAS
+        /*public AutoSpy SideMenuAS
         {
             get;
 
             private set;
-        }
+        }*/
 
         public Size WindowSize
         {
