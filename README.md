@@ -9,6 +9,15 @@ Facebook Fanspage : https://goo.gl/Ja3tMf
 I do not suggest or condone running this bot unattended.
 Also always keep in mind that with every online game there's always potential to be banned when using a bot to play.
 
+
+##What is already working on Alpha Version 
++ Scene :
+ - Netmarble Splash
+ - Landing
+ - Tap To Play
+ - Notice
+ - Lobby ( All Button, Lobby Scene)
+ 
 ## Requirements
 1.Requires Bluestacks v3.56.73 
  https://www.bluestacks.com/
