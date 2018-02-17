@@ -10,8 +10,8 @@ I do not suggest or condone running this bot unattended.
 Also always keep in mind that with every online game there's always potential to be banned when using a bot to play.
 
 ## Requirements
-1.Requires Bluestacks v2.0.4.5627
- https://goo.gl/fBsyx1 
+1.Requires Bluestacks v3.56.73 
+ https://www.bluestacks.com/
 
 2. Visual C++ Pack
  https://goo.gl/quMkK6 
